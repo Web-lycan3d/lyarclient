@@ -1,0 +1,275 @@
+/** @format */
+$base-color: #1e4384;
+$header-color: #00d29e;
+
+@mixin greenheader {
+  position: absolute;
+  top: 0rem;
+  width: 5rem;
+  height: 0.5rem;
+  background-color: $header-color;
+  content: "";
+}
+
+.landing-container {
+  width: 100%;
+  height: auto;
+}
+.landing-contents {
+  width: 100%;
+  height: 100%;
+}
+.slider-item {
+  width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
+.landing-content-1 {
+  width: 100%;
+  padding: 5% 0;
+  margin: 3rem 0;
+  background: url("https://i.ibb.co/vPBZJb1/Mask-Group-64.webp") no-repeat
+    center;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.733),
+      rgba(44, 43, 43, 0.068)
+    );
+    z-index: 0;
+  }
+
+  .landing-content-1-details {
+    position: relative;
+    z-index: 2;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 90%;
+
+      object-fit: contain;
+
+      margin: 1.5rem 0;
+    }
+    span {
+      display: block;
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.7;
+      font-size: 1.1rem;
+      font-family: "Inter";
+      letter-spacing: 0.35px;
+      padding-top: 2rem;
+      font-weight: 300;
+    }
+  }
+}
+.landing-content-2 {
+  width: 100%;
+  padding-top: 2%;
+  height: auto;
+  h1 {
+    font-size: 35px;
+    letter-spacing: 9.35px;
+    color: #1e4384;
+    text-align: center;
+  }
+}
+.landing-content-2-details {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  .landing-content-2-left,
+  .landing-content-2-right {
+    width: 50%;
+    height: 100%;
+    //     background: url("https://i.ibb.co/xXtTNRw/Mask-Group-76.png") no-repeat
+    //       center;
+    //     background-size: contain;
+    .landing-content-2-img {
+      width: 100%;
+      position: absolute;
+
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    position: relative;
+    border: 2px solid #1e4384;
+    .landing-content-2-left-item {
+      position: absolute;
+      top: 28%;
+      left: 50%;
+      z-index: 5;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      color: #033791;
+      h2 {
+        font-size: 3rem;
+        letter-spacing: 1.22px;
+        font-weight: 800;
+        margin-bottom: 0.7rem;
+      }
+      span {
+        display: block;
+        width: 35rem;
+        margin: 0 auto;
+        font-weight: 600;
+        letter-spacing: 0.37px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .landing-content-2-right {
+    position: relative;
+    background-color: #033791;
+    .landing-content-2-img {
+      left: -2rem;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      &:hover {
+        transform: translateX(-20px);
+      }
+    }
+    //     &::before {
+    //       position: absolute;
+    //       z-index: 1;
+    //       background-color: #033791;
+
+    //       content: "";
+    //       width: 100%;
+    //       height: 100%;
+    //       left: 0;
+    //       top: 0;
+    //     }
+    //     &::after {
+    //       position: absolute;
+    //       z-index: 2;
+    //       background: url("https://i.ibb.co/yPXbW4Q/Mask-Group-20.png") no-repeat
+    //         center;
+    //       background-size: cover;
+
+    //       content: "";
+    //       width: 100%;
+    //       height: 100%;
+    //       left: 0;
+    //       top: 0;
+    //     }
+    .landing-content-2-left-item {
+      color: white;
+    }
+  }
+}
+.landing-content-3 {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 6% 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url("https://i.ibb.co/SNzmBLF/drones-flying-over-the-houses-of-the-city-of-minsk-2021-08-30-00-54-35-utc.png")
+    no-repeat center;
+  background-size: cover;
+  .landing-content-3-spantag {
+    width: 40%;
+    padding-right: 1.5rem;
+    line-height: 1.7;
+    color: #1e4384;
+    font-weight: 300;
+    font-size: 1.2rem;
+    font-family: "Inter";
+  }
+}
+.landing-content-3-details {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h3 {
+    font-size: 2.7rem;
+    color: #1e4384;
+    position: relative;
+    padding-top: 0.9rem;
+    &::before {
+      @include greenheader();
+    }
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+}
+.landing-content-4 {
+  width: 100%;
+  margin-bottom: 3rem;
+  padding: 6% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://i.ibb.co/2PXv9fY/molecular-abstract-network-dark-background-3d-il-2021-08-26-16-34-41-utc.png")
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #033791ad;
+    z-index: 0;
+  }
+  .landing-content-4-details {
+    position: relative;
+    z-index: 1;
+    color: white;
+    &::before {
+      @include greenheader();
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    h3 {
+      margin-top: 0.5rem;
+      font-size: 2.5rem;
+      letter-spacing: 0.64px;
+      cursor: pointer;
+      transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      &:active {
+        transform: scale(0.85);
+      }
+      &:hover {
+        letter-spacing: 1.8px;
+      }
+    }
+  }
+}

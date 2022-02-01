@@ -1,0 +1,97 @@
+/** @format */
+
+.about-container {
+  width: 100%;
+  height: 100%;
+}
+.about-contents {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+.about-text {
+  width: 80%;
+  height: 50rem;
+  position: relative;
+  .about-text-details {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-20%, -40%);
+  }
+  color: #033791;
+  h3 {
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 13.35px;
+  }
+  p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+  }
+}
+.about-header-img {
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+  width: 70%;
+  z-index: 100;
+
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.about-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #033791;
+  padding: 8% 0;
+  position: relative;
+
+  &::before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("https://i.ibb.co/PNhB3rW/Union-6.png") no-repeat center;
+    opacity: 0.6;
+    content: "";
+  }
+}
+.about-footer-img {
+  width: 350px;
+  height: 350px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.about-footer-details {
+  width: 55%;
+  color: rgb(252, 252, 252);
+  h2 {
+    font-size: 2.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    letter-spacing: 0.42px;
+  }
+}
+@media screen and(max-width:1350px) {
+  .about-header-img {
+    height: 100%;
+    width: 80%;
+    top: -5rem;
+  }
+}
