@@ -16,14 +16,16 @@ $header-color: #00d29e;
   height: auto;
 }
 .landing-contents {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
 }
 .slider-item {
   width: 100%;
   height: 90vh;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+
   video {
     width: 100%;
     height: 100%;
@@ -31,7 +33,7 @@ $header-color: #00d29e;
 }
 .landing-content-1 {
   width: 100%;
-  padding: 5% 0;
+  padding: 4.5% 0;
   margin: 3rem 0;
   background: url("https://i.ibb.co/vPBZJb1/Mask-Group-64.webp") no-repeat
     center;

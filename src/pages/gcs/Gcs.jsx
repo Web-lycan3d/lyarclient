@@ -2,10 +2,10 @@
 import "./gcs.styles.scss";
 
 import React from "react";
-import Features from "../Individual/Features/Features";
-import Sidebar from "../Individual/sidebar/Sidebar";
+import Features from "../../components/Individual/Features/Features";
+import Sidebar from "../../components/Individual/sidebar/Sidebar";
 import { motion } from "framer-motion";
-import { Scroll } from "../Scroll";
+import { Scroll } from "../../components/Scroll";
 
 const Gcs = () => {
   Scroll();

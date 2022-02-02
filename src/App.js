@@ -1,15 +1,17 @@
 /** @format */
 import React from "react";
 import "./App.css";
-import MicroDrone from "./pages/MicroDrone";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
-import ProductMenu from "./components/PorductMenu/ProductMenu";
 import { AnimatePresence } from "framer-motion";
-import Swarm from "./components/Swarm/Swarm";
-import Gcs from "./components/gcs/Gcs";
-import About from "./components/About/About";
-import Contact from "./components/contact/Contact";
+
+import MicroDrone from "./pages/MicroDrone";
+import Navbar from "./components/navbar/Navbar";
+import ProductMenu from "./pages/PorductMenu/ProductMenu";
+
+import Swarm from "./pages/Swarm/Swarm";
+import Gcs from "./pages/gcs/Gcs";
+import About from "./pages/About/About";
+import Contact from "./pages/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Landing from "./pages/landing/Landing";
 

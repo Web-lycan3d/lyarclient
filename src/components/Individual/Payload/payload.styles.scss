@@ -24,16 +24,17 @@ $span: #979797;
 .payload-flex-container {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
-  gap: 0 3rem;
+  gap: 0 4rem;
   flex-wrap: wrap;
 }
 .payload-h2 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 500;
   position: relative;
   padding-top: 0.8rem;
+  padding-left: 2rem;
   letter-spacing: 0.8px;
   color: rgb(255, 255, 255);
   &::before {
@@ -67,14 +68,15 @@ $span: #979797;
   }
 }
 .payload-img {
-  width: 550px;
-  height: 300px;
+  width: 500px;
+  height: 250px;
   display: flex;
-
+  position: relative;
+  right: 1rem;
   img {
-    width: 280px;
-    height: 100%;
-    object-fit: contain;
+    width: 270px;
+    height: auto;
+    object-fit: cover;
   }
   .payload-img-ptag {
     align-self: center;
@@ -214,15 +216,16 @@ $span: #979797;
     gap: 0 2.5rem;
   }
   .payload-item {
+    padding-top: 0%;
     width: 25rem;
   }
   .payload-img {
     width: 500px;
-    height: 300px;
+    height: 250px;
     display: flex;
     justify-content: flex-start;
     img {
-      width: 220px;
+      width: 250px;
       height: auto;
     }
     .payload-img-ptag {
@@ -249,7 +252,7 @@ $span: #979797;
   }
   .payload-img {
     width: 500px;
-    height: 300px;
+    height: 200px;
     display: flex;
     justify-content: flex-start;
     img {

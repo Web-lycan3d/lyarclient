@@ -22,24 +22,34 @@ const Landing = () => {
             spaceBetween={0}
             slidesPerView={1}
             className="mySwiper"
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}>
+            onSlideChange={() => console.log("slide change")}>
             <SwiperSlide>
               <div className="slider-item">
-                <video>
+                <video autoPlay>
                   <source src="../Aeras.mp4" />
                 </video>
-              </div>{" "}
-              Slide 1
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="slider-item"></div> Slide 2
+              <div className="slider-item">
+                <video autoPlay>
+                  <source src="../Aetos.mp4" />
+                </video>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="slider-item"></div> Slide 3
+              <div className="slider-item">
+                <video autoPlay>
+                  <source src="../Astra.mp4" />
+                </video>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="slider-item"></div> Slide 4
+              <div className="slider-item">
+                <video autoPlay>
+                  <source src="../Azure.mp4" />
+                </video>
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>
