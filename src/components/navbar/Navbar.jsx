@@ -76,11 +76,13 @@ const Navbar = () => {
             </div>
           </div>
           <div className="brand-logo">
-            <img
-              src="https://i.ibb.co/2yQd05M/Group-1.webp"
-              alt="logo"
-              className="nav-logo"
-            />
+            <Link to="/">
+              <img
+                src="https://i.ibb.co/2yQd05M/Group-1.webp"
+                alt="logo"
+                className="nav-logo"
+              />
+            </Link>
           </div>
           <div
             className="nav-ptag"
