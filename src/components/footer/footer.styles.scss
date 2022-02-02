@@ -11,7 +11,7 @@
 .footer-left {
   display: flex;
   align-items: center;
-  gap: 0 1.5rem;
+  gap: 0 1.2rem;
   padding-left: 3rem;
   .footer-brandlogo {
     width: 100px;
@@ -37,7 +37,7 @@
 }
 .footer-center {
   .footer-spantag {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     color: #033791;
   }
@@ -69,5 +69,22 @@
     width: 0;
     height: 0;
     content: "";
+  }
+}
+@media screen and(max-width:1450px) {
+  .footer-left {
+    padding-left: 1.5rem;
+    gap: 0 0.8rem;
+    .footer-atag {
+      font-size: 0.85rem;
+      max-width: 5rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .footer-center {
+    position: relative;
+    left: 1.5rem;
   }
 }
