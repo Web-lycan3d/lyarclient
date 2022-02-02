@@ -74,36 +74,44 @@ const Landing = () => {
             <div className="landing-content-2-img">
               <img src="https://i.ibb.co/xXtTNRw/Mask-Group-76.png" alt="err" />
             </div>
-            <div className="landing-content-2-left-item">
-              <h2>MULTIROTOR</h2>
-              <span>
-                easy to use, quick to deploy, and fully calibrated to suit a
-                variety of applications and functions
-              </span>
-            </div>
+            <Link to={"/product/menu?areial=" + true}>
+              <div className="landing-content-2-left-item">
+                <h2> MULTIROTOR</h2>
+                <span>
+                  easy to use, quick to deploy, and fully calibrated to suit a
+                  variety of applications and functions
+                </span>
+              </div>
+            </Link>
           </div>
           <div className="landing-content-2-right">
             <div className="landing-content-2-img">
               <img src="https://i.ibb.co/yPXbW4Q/Mask-Group-20.png" alt="err" />
             </div>
-            <div className="landing-content-2-left-item">
-              <h2>FIXED WING</h2>
-              <span>
-                Able to carry various payloads, operate in extreme weather
-                conditions and built to perform a broad range of functions.
-              </span>
-            </div>
+
+            <Link to={"/product/menu?areial=" + false}>
+              <div className="landing-content-2-left-item">
+                <h2>FIXED WING</h2>
+                <span>
+                  Able to carry various payloads, operate in extreme weather
+                  conditions and built to perform a broad range of functions.
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
       <div className="landing-content-3">
         <div className="landing-content-3-details">
           <h3>
-            SWARM <br />
-            SYSTEM
+            <Link to="/swarm">
+              SWARM <br />
+              SYSTEM
+            </Link>
           </h3>
           <img src="https://i.ibb.co/cYPbKDB/Group-9762.png" alt="error" />
         </div>
+
         <span className="landing-content-3-spantag">
           A Swarm system refers to a fleet of drones flying together in a
           pattern similar to a flock of birds in order to perform coordinated
