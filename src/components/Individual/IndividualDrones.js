@@ -336,6 +336,20 @@ export const individualDrones = [
       },
     ],
     application_Img: "https://i.ibb.co/gF5PMTw/10-Kg-Logistics.png",
+    aerasDrones: [
+      {
+        name: "DEFENCE",
+        img: "https://i.ibb.co/4mYGsS1/10-KG-Military-ISO-View.png",
+      },
+      {
+        name: "MEDICAL",
+        img: "https://i.ibb.co/NxKL7bk/10-KG-Mediical-ISO-View.png",
+      },
+      {
+        name: "LOGISTICS",
+        img: "https://i.ibb.co/Scq6wrB/10-KG-Delivery-ISO-View.png",
+      },
+    ],
     pagecenterImg: "https://i.ibb.co/3WGPpMw/Mask-Group-9.png",
     pagecentertext: "A swift and dependable drone",
     pagecenterBg: "https://i.ibb.co/5BbxnFL/Mask-Group-65.webp",
@@ -611,7 +625,7 @@ export const individualDrones = [
         value: "EO/IR Camera",
       },
     ],
-    footerimg: "https://i.ibb.co/55ydV4y/Path-104.png",
+    footerimg: "https://i.ibb.co/VTVHc8X/Path-104.webp",
   },
   {
     id: 5,

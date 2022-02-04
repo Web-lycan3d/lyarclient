@@ -25,16 +25,14 @@ const Navdots = ({ menuState, setmenuState }) => {
           className="dot-brandlogo"
         />
         <div className="nav-hamburger" onClick={() => setmenuState(false)}>
-          <RiCloseFill />
+          <RiCloseFill className="nav-closeicon" />
         </div>
       </div>
       <div className="nav-dots-contents">
         <div className="nav-dots-contents-left">
-          <span>
+          <span onClick={() => setmenuState(false)}>
             <sup>01/</sup>
-            <Link to="/" onClick={() => setmenuState(false)}>
-              HOME
-            </Link>
+            <Link to="/"> HOME</Link>
           </span>
           <span onClick={() => setmenuState(false)}>
             <sup>02/</sup>
@@ -56,7 +54,7 @@ const Navdots = ({ menuState, setmenuState }) => {
             <sup>06/</sup> <Link to="/contact"> CONTACT</Link>
           </span>
           <span onClick={() => setmenuState(false)}>
-            <sup>0//</sup> <Link to="/"> PRIVACY POLICY</Link>
+            <sup>07/</sup> <Link to="/"> PRIVACY POLICY</Link>
           </span>
           <span onClick={() => setmenuState(false)}>
             <sup>09/</sup> <Link to="/"> TERMS OF USE</Link>

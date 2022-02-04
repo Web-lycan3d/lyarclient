@@ -10,26 +10,46 @@ const Payload = ({ payload }) => {
         <div className="payload-contents">
           <h2 className="payload-h2">PAYLOAD APPLICATIONS</h2>
           <div className="payload-flex-container">
-            {payload.payload_array.map((item) => (
-              <div className="payload-item" key={item.payload_item_text}>
-                <div className="payload-img">
-                  <img src={item.payload_item_img} alt="error" />
-                  <p
-                    className={
-                      item.payload_item_text === "RGB CAMERA"
-                        ? "payload-img-ptag payload-img-ptag-rgb"
-                        : "payload-img-ptag"
-                    }>
-                    {item.payload_item_text}
-                  </p>
+            {payload.payload_array.map((item) =>
+              item.payload_item_text !== "300G OF AMMUNITION" ? (
+                <div className="payload-item" key={item.payload_item_text}>
+                  <div className="payload-img">
+                    <img src={item.payload_item_img} alt="error" />
+
+                    <p
+                      className={
+                        item.payload_item_text === "RGB CAMERA"
+                          ? "payload-img-ptag payload-img-ptag-rgb"
+                          : "payload-img-ptag"
+                      }>
+                      {item.payload_item_text}
+                    </p>
+                  </div>
+                  <div className="payload-details">
+                    {item.payload_usage.split(":").map((text) => (
+                      <p key={text}>{text}</p>
+                    ))}
+                  </div>
                 </div>
-                <div className="payload-details">
-                  {item.payload_usage.split(":").map((text) => (
-                    <p key={text}>{text}</p>
-                  ))}
+              ) : (
+                <div className="orino-item">
+                  <div className="orino-contents">
+                    <h2>{item.payload_item_text}</h2>
+                    <div className="orino-details">
+                      {item.payload_usage.split(":").map((text) => (
+                        <p key={text}>{text}</p>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="orino-img">
+                    <img
+                      src="https://i.ibb.co/mrnyBYK/Group-9701.webp"
+                      alt="err"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </div>
       </div>

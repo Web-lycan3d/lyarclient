@@ -1,16 +1,21 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import "./landing.styles.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const Landing = () => {
+  const [swarmState, setSwarmState] = useState(false);
+  const [gcsState, setGcsState] = useState(true);
+
+  const navigate = useNavigate();
+
   return (
     <div className="landing-container">
       <div className="landing-contents">
@@ -21,10 +26,19 @@ const Landing = () => {
             navigation={true}
             spaceBetween={0}
             slidesPerView={1}
-            className="mySwiper"
-            onSlideChange={() => console.log("slide change")}>
+            className="mySwiper">
             <SwiperSlide>
               <div className="slider-item">
+                <div
+                  className="discover-test"
+                  onClick={() => navigate("/drone/1")}>
+                  <img
+                    src="https://i.ibb.co/Hx0Ng1w/Group-10357w.png"
+                    alt="error"
+                  />
+
+                  {/* <p className="discover-p">DISCOVER</p> */}
+                </div>
                 <video autoPlay>
                   <source src="../Aeras.mp4" />
                 </video>
@@ -32,6 +46,14 @@ const Landing = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="slider-item">
+                <div className="discover-test">
+                  <Link to={"/drone/" + 2}>
+                    <img
+                      src="https://i.ibb.co/Hx0Ng1w/Group-10357w.png"
+                      alt="error"
+                    />
+                  </Link>
+                </div>
                 <video autoPlay>
                   <source src="../Aetos.mp4" />
                 </video>
@@ -39,6 +61,14 @@ const Landing = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="slider-item">
+                <div className="discover-test">
+                  <Link to={"/drone/" + 3}>
+                    <img
+                      src="https://i.ibb.co/Hx0Ng1w/Group-10357w.png"
+                      alt="error"
+                    />
+                  </Link>
+                </div>
                 <video autoPlay>
                   <source src="../Astra.mp4" />
                 </video>
@@ -46,6 +76,14 @@ const Landing = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="slider-item">
+                <div className="discover-test">
+                  <Link to={"/drone/" + 4}>
+                    <img
+                      src="https://i.ibb.co/Hx0Ng1w/Group-10357w.png"
+                      alt="error"
+                    />
+                  </Link>
+                </div>
                 <video autoPlay>
                   <source src="../Azure.mp4" />
                 </video>
@@ -101,34 +139,64 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="landing-content-3">
+      <div
+        className="landing-content-3"
+        style={swarmState ? { cursor: "pointer" } : { cursor: "auto" }}
+        onClick={() => {
+          swarmState && navigate("/swarm");
+        }}>
         <div className="landing-content-3-details">
-          <h3>
-            <Link to="/swarm">
-              SWARM <br />
-              SYSTEM
-            </Link>
+          <h3
+            onClick={() => {
+              setGcsState(false);
+              setSwarmState(true);
+            }}>
+            SWARM <br />
+            SYSTEM
           </h3>
-          <img src="https://i.ibb.co/cYPbKDB/Group-9762.png" alt="error" />
+          {swarmState && (
+            <img src="https://i.ibb.co/cYPbKDB/Group-9762.png" alt="error" />
+          )}
         </div>
 
-        <span className="landing-content-3-spantag">
-          A Swarm system refers to a fleet of drones flying together in a
-          pattern similar to a flock of birds in order to perform coordinated
-          tasks and achieve a specific goal. We are developing peer-to-peer
-          communication systems that enable multiple drones to communicate with
-          each other and operate as a group
-        </span>
+        {swarmState && (
+          <span className="landing-content-3-spantag">
+            A Swarm system refers to a fleet of drones flying together in a
+            pattern similar to a flock of birds in order to perform coordinated
+            tasks and achieve a specific goal. We are developing peer-to-peer
+            communication systems that enable multiple drones to communicate
+            with each other and operate as a group
+          </span>
+        )}
       </div>
-      <div className="landing-content-4">
+      <div
+        className="landing-content-4"
+        style={gcsState ? { cursor: "pointer" } : { cursor: "auto" }}
+        onClick={() => {
+          gcsState && navigate("/gcs?scroll=" + true);
+        }}>
         <div className="landing-content-4-details">
-          <Link to={"/gcs?scroll=" + true}>
-            <h3>
-              GCS <br />
-              SYSTEM
-            </h3>
-          </Link>
+          <h3
+            onClick={() => {
+              setSwarmState(false);
+              setGcsState(true);
+            }}>
+            GCS <br />
+            SYSTEM
+          </h3>
+
+          {gcsState && (
+            <img src="https://i.ibb.co/Wy56jRR/Group-9778.png" alt="error" />
+          )}
         </div>
+        {gcsState && (
+          <span className="landing-content-4-spantag">
+            Ground Control Station (GCS) refers to an integrated rugged solution
+            for controlling drones. Currently, we are developing our own ground
+            control centre that will include software for monitoring and
+            controlling drones remotely through computer systems.
+          </span>
+        )}
       </div>
     </div>
   );

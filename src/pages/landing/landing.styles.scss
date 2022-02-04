@@ -1,6 +1,10 @@
 /** @format */
 $base-color: #1e4384;
 $header-color: #00d29e;
+:root {
+  --swiper-theme-color: #1e4384 !important;
+  --swiper-navigation-size: 45px !important;
+}
 
 @mixin greenheader {
   position: absolute;
@@ -16,20 +20,74 @@ $header-color: #00d29e;
   height: auto;
 }
 .landing-contents {
-  width: 90%;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 .slider-item {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   margin: 0 auto;
-  padding-bottom: 2rem;
-
+  padding-bottom: 0rem;
+  position: relative;
+  top: -4rem;
   video {
     width: 100%;
     height: 100%;
   }
+  .discover-test {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .discover-p {
+      position: absolute;
+      top: 86%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 5.54px;
+    }
+  }
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 12rem !important;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 12rem !important;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button- {
+  right: 12rem !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-weight: 700;
+}
+.swiper-pagination-bullet {
+  position: relative;
+  left: 0.2rem;
+  padding: 0.1rem;
+  margin: 0 0.4rem !important;
+  border: 2px solid #1e4384 !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #1e4384 !important;
 }
 .landing-content-1 {
   width: 100%;
@@ -105,9 +163,12 @@ $header-color: #00d29e;
   .landing-content-2-right {
     width: 50%;
     height: 100%;
+    cursor: pointer;
     //     background: url("https://i.ibb.co/xXtTNRw/Mask-Group-76.png") no-repeat
     //       center;
     //     background-size: contain;
+
+    overflow: hidden;
     .landing-content-2-img {
       width: 100%;
       position: absolute;
@@ -115,6 +176,7 @@ $header-color: #00d29e;
       height: 100%;
       left: 0;
       bottom: 0;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
       img {
         width: 100%;
         height: 100%;
@@ -147,9 +209,12 @@ $header-color: #00d29e;
         font-size: 1.2rem;
       }
       transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-      &:hover {
-        opacity: 0.85;
-      }
+    }
+    &:hover .landing-content-2-img {
+      transform: scale(1.1) translateY(-20px);
+    }
+    &:hover .landing-content-2-left-item {
+      opacity: 0.65;
     }
   }
   .landing-content-2-right {
@@ -158,9 +223,13 @@ $header-color: #00d29e;
     .landing-content-2-img {
       left: -2rem;
       transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-      &:hover {
-        transform: translateX(-20px);
-      }
+    }
+    &:hover .landing-content-2-img {
+      transform: translateX(-28px);
+    }
+    &:hover .landing-content-2-left-item,
+    .landing-content-2-img {
+      opacity: 0.85;
     }
     //     &::before {
     //       position: absolute;
@@ -201,16 +270,20 @@ $header-color: #00d29e;
   background: url("https://i.ibb.co/SNzmBLF/drones-flying-over-the-houses-of-the-city-of-minsk-2021-08-30-00-54-35-utc.png")
     no-repeat center;
   background-size: cover;
-  .landing-content-3-spantag {
-    width: 40%;
-    padding-right: 1.5rem;
-    line-height: 1.7;
-    color: #1e4384;
-    font-weight: 300;
-    font-size: 1.2rem;
-    font-family: "Inter";
-  }
 }
+.landing-content-3-spantag,
+.landing-content-4-spantag {
+  width: 40%;
+  padding-right: 1.5rem;
+  line-height: 1.85;
+  color: #1e4384;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-family: "Inter";
+  position: relative;
+  z-index: 10;
+}
+
 .landing-content-3-details {
   width: 40%;
   text-align: center;
@@ -218,10 +291,11 @@ $header-color: #00d29e;
   justify-content: space-around;
   align-items: center;
   h3 {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     color: #1e4384;
     position: relative;
     padding-top: 0.9rem;
+    cursor: pointer;
     &::before {
       @include greenheader();
     }
@@ -238,22 +312,24 @@ $header-color: #00d29e;
     }
   }
   img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: contain;
   }
 }
 .landing-content-4 {
   width: 100%;
   margin-bottom: 3rem;
-  padding: 6% 0;
+  padding: 7.5% 0;
   display: flex;
   justify-content: center;
+  gap: 0 6rem;
   align-items: center;
   background: url("https://i.ibb.co/2PXv9fY/molecular-abstract-network-dark-background-3d-il-2021-08-26-16-34-41-utc.png")
     no-repeat center;
   background-size: cover;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -261,32 +337,57 @@ $header-color: #00d29e;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #033791ad;
+    background-color: #033791dc;
     z-index: 0;
   }
   .landing-content-4-details {
+    width: 40%;
     position: relative;
     z-index: 1;
     color: white;
-    &::before {
-      @include greenheader();
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10rem;
+    left: -1rem;
     a {
       text-decoration: none;
       color: inherit;
     }
     h3 {
       margin-top: 0.5rem;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       letter-spacing: 0.64px;
+
       cursor: pointer;
       transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      position: relative;
+      top: 1rem;
       &:active {
         transform: scale(0.85);
       }
-      &:hover {
-        letter-spacing: 1.8px;
+
+      &::before {
+        @include greenheader();
+        top: -0.8rem;
       }
     }
+    img {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+    }
+  }
+  .landing-content-4-spantag {
+    width: 40%;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    position: relative;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .slider-item {
+    top: 0;
+    padding-bottom: 3rem;
   }
 }

@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import BoxSvg from "./BoxSvg";
 import "./nav.styles.scss";
 import Navdots from "./Navdots";
 
@@ -60,19 +61,19 @@ const Navbar = () => {
               setAreialState(!areialState);
             }}>
             <p> AERIAL SYSTEMS</p>
-
             <div
               className={
-                areialState
-                  ? "nav-aerial-contents nav-areial-active"
-                  : "nav-aerial-contents"
+                areialState ? "nav-boxsvg nav-areial-active" : "nav-boxsvg"
               }>
-              <Link className="nav-atag" to={"/product/menu?areial=" + true}>
-                <span>Muticolor</span>
-              </Link>
-              <Link className="nav-atag" to={"/product/menu?areial=" + false}>
-                <span>Fixed Wing</span>
-              </Link>
+              <BoxSvg />
+              <div className="nav-aerial-contents">
+                <Link className="nav-atag" to={"/product/menu?areial=" + true}>
+                  <span>Multirotor</span>
+                </Link>
+                <Link className="nav-atag" to={"/product/menu?areial=" + false}>
+                  <span>Fixed Wing</span>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="brand-logo">
@@ -84,6 +85,7 @@ const Navbar = () => {
               />
             </Link>
           </div>
+
           <div
             className="nav-ptag"
             onClick={() => {
@@ -93,18 +95,20 @@ const Navbar = () => {
             <p> COMMUNICATION</p>
             <div
               className={
-                areialState2
-                  ? "nav-aerial-contents nav-areial-active"
-                  : "nav-aerial-contents"
+                areialState2 ? "nav-boxsvg nav-areial-active" : "nav-boxsvg"
               }>
-              <Link className="nav-atag" to="/gcs">
-                <span>GCS</span>
-              </Link>
-              <Link className="nav-atag" to="/swarm">
-                <span>SWARM</span>
-              </Link>
+              <BoxSvg />
+              <div className="nav-aerial-contents">
+                <Link className="nav-atag" to="/gcs">
+                  <span>GCS</span>
+                </Link>
+                <Link className="nav-atag" to="/swarm">
+                  <span>SWARM</span>
+                </Link>
+              </div>
             </div>
           </div>
+
           <div className="nav-dots" onClick={() => setmenuState(!menuState)}>
             <img src="https://i.ibb.co/kStnLBz/Group-9875.png" alt="dots" />
           </div>

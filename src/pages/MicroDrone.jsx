@@ -10,6 +10,7 @@ import ApplicationAdv from "../components/Individual/Application/ApplicationAdv"
 import DroneVideo from "../components/Individual/Video/DroneVideo";
 import { individualDrones } from "../components/Individual/IndividualDrones";
 import { useParams } from "react-router-dom";
+import Drones from "../components/Individual/Drones/Drones";
 
 const MicroDrone = () => {
   const { id } = useParams();
@@ -40,11 +41,16 @@ const MicroDrone = () => {
           bg: droneDetails?.pagecenterBg,
         }}
       />
+      {droneDetails.droneName === "AERAS" && (
+        <Drones drone={droneDetails?.aerasDrones} />
+      )}
+
       <ApplicationAdv
         appAdv={{
           img: droneDetails?.sectorImg,
         }}
       />
+
       <DroneVideo url={droneDetails?.videoUrl} />
       <Features
         features={{
