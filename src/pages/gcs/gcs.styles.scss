@@ -31,6 +31,7 @@ $header-color: #00d29e;
 
 .gcs-header {
   width: 85%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -100,7 +101,7 @@ $header-color: #00d29e;
   }
 }
 .gcs-benifits {
-  padding: 7% 0;
+  padding: 2% 0 3%;
   background-color: white;
 }
 .gcs-benifits-contents {
