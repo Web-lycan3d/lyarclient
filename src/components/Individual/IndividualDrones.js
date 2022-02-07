@@ -665,7 +665,7 @@ export const individualDrones = [
     pagecenterImg: "https://i.ibb.co/P9DdM9T/Mask-Group-7.png",
     pagecentertext: "A silent yet deadly UAV",
     pagecenterBg: "https://i.ibb.co/jw1tNsp/Mask-Group-68.webp",
-    sectorImg: "https://i.ibb.co/TRYwzJF/Group-9815.png",
+    sectorImg: "https://i.ibb.co/hsrcYyb/Group-10313.png",
     droneVideo: "",
     features: [
       {

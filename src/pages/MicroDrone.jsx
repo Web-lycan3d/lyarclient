@@ -47,6 +47,7 @@ const MicroDrone = () => {
 
       <ApplicationAdv
         appAdv={{
+          name: droneDetails?.droneName,
           img: droneDetails?.sectorImg,
         }}
       />
