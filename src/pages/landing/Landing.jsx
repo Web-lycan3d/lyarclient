@@ -19,6 +19,7 @@ const Landing = () => {
 
   const navigate = useNavigate();
   AosEffect();
+
   return (
     <div className="landing-container">
       <div className="landing-contents">
@@ -34,7 +35,7 @@ const Landing = () => {
               <div className="slider-item">
                 <div
                   className="discover-test"
-                  onClick={() => navigate("/drone/1")}>
+                  onClick={() => navigate("/drone/3")}>
                   <img
                     src="https://i.ibb.co/Hx0Ng1w/Group-10357w.png"
                     alt="error"
@@ -50,7 +51,7 @@ const Landing = () => {
             <SwiperSlide>
               <div className="slider-item">
                 <div className="discover-test">
-                  <Link to={"/drone/" + 2}>
+                  <Link to={"/drone/" + 4}>
                     <img
                       src="https://i.ibb.co/Hx0Ng1w/Group-10357w.png"
                       alt="error"
@@ -65,7 +66,7 @@ const Landing = () => {
             <SwiperSlide>
               <div className="slider-item">
                 <div className="discover-test">
-                  <Link to={"/drone/" + 3}>
+                  <Link to={"/drone/" + 2}>
                     <img
                       src="https://i.ibb.co/Hx0Ng1w/Group-10357w.png"
                       alt="error"
@@ -80,7 +81,7 @@ const Landing = () => {
             <SwiperSlide>
               <div className="slider-item">
                 <div className="discover-test">
-                  <Link to={"/drone/" + 4}>
+                  <Link to={"/drone/" + 1}>
                     <img
                       src="https://i.ibb.co/Hx0Ng1w/Group-10357w.png"
                       alt="error"

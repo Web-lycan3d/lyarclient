@@ -26,7 +26,7 @@ $header-color: #00d29e;
     background: url("https://i.ibb.co/VTM3qQ8/Repeat-Grid-1.webp") no-repeat
       center;
     background-size: cover;
-    opacity: 0.5;
+    opacity: 0.75;
   }
 }
 
@@ -64,16 +64,17 @@ $header-color: #00d29e;
   text-decoration: none;
 }
 .productmenu-nav-item {
-  width: 100%;
+  width: 90%;
 
   background-color: rgb(255, 255, 255);
   height: 110px;
 
   padding: 2rem;
-
+  padding-left: 4rem;
+  padding-right: 3rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: $base-color;
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
