@@ -51,6 +51,8 @@ $header-color: #00d29e;
     position: relative;
     &::before {
       @include greenheader();
+      top: 2.9rem;
+      height: 0.3rem;
     }
     h4 {
       width: 90%;
@@ -128,7 +130,9 @@ $header-color: #00d29e;
     position: relative;
     &::before {
       @include greenheader();
-      top: -1rem;
+      top: -0.2rem;
+      width: 4rem;
+      height: 0.3rem;
     }
   }
   p {
@@ -158,6 +162,8 @@ $header-color: #00d29e;
     margin-bottom: 0rem;
     &::before {
       @include greenheader();
+      width: 4rem;
+      height: 0.3rem;
     }
   }
 }

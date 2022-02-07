@@ -39,8 +39,11 @@ $span: #979797;
   color: rgb(255, 255, 255);
   &::before {
     @include greenheader();
-    top: 0;
+    top: 0.6rem;
     background-color: $header-color;
+
+    width: 4rem;
+    height: 0.3rem;
   }
 }
 .orino-item {
@@ -177,8 +180,11 @@ $span: #979797;
   color: rgb(255, 255, 255);
   &::before {
     @include greenheader();
-    top: 0;
+    top: 0rem;
     background-color: $header-color;
+
+    width: 4rem;
+    height: 0.3rem;
   }
 }
 .sheet-contents {

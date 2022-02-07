@@ -40,6 +40,7 @@ $header-color: #00d29e;
     margin-bottom: 1rem;
     &::before {
       @include greenheader();
+      top: 2.5rem;
     }
     img {
       width: 180px;

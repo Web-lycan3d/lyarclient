@@ -36,6 +36,9 @@ $green-color: #00d29e;
   position: relative;
   &:before {
     @include greenheader();
+    top: 1.65rem;
+    width: 4rem;
+    height: 0.3rem;
   }
 
   .application-h1 {
@@ -88,7 +91,10 @@ $green-color: #00d29e;
   font-size: 2.6rem;
   &::before {
     @include greenheader();
-    top: 0;
+    top: 0.5rem;
+
+    width: 4rem;
+    height: 0.3rem;
   }
 }
 .applicationadv-img {
