@@ -43,7 +43,7 @@ const Payload = ({ payload }) => {
                   </div>
                   <div className="orino-img">
                     <img
-                      src="https://i.ibb.co/mrnyBYK/Group-9701.webp"
+                      src="https://i.ibb.co/D110cMd/Group-10357.png"
                       alt="err"
                     />
                   </div>

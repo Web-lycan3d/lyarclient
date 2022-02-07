@@ -43,7 +43,7 @@ const Landing = () => {
 
                   {/* <p className="discover-p">DISCOVER</p> */}
                 </div>
-                <video autoPlay>
+                <video autoPlay loop>
                   <source src="../Aeras.mp4" />
                 </video>
               </div>
@@ -58,7 +58,7 @@ const Landing = () => {
                     />
                   </Link>
                 </div>
-                <video autoPlay>
+                <video autoPlay loop>
                   <source src="../Aetos.mp4" />
                 </video>
               </div>
@@ -73,7 +73,7 @@ const Landing = () => {
                     />
                   </Link>
                 </div>
-                <video autoPlay>
+                <video autoPlay loop>
                   <source src="../Astra.mp4" />
                 </video>
               </div>
@@ -88,7 +88,7 @@ const Landing = () => {
                     />
                   </Link>
                 </div>
-                <video autoPlay>
+                <video autoPlay loop>
                   <source src="../Azure.mp4" />
                 </video>
               </div>

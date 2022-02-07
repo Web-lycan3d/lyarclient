@@ -503,7 +503,7 @@ export const individualDrones = [
     ],
     application_Img:
       "https://i.ibb.co/mhmMkHD/UAV-FW-In-Conext-transparent2.png",
-    pagecenterImg: "https://i.ibb.co/3WGPpMw/Mask-Group-9.png",
+    pagecenterImg: "https://i.ibb.co/TgNBvWx/Mask-Group-8.png",
     pagecentertext: "A high precision bird's-eye UAV",
     pagecenterBg: "https://i.ibb.co/yB6nvKP/Mask-Group-67.webp",
     sectorImg: "https://i.ibb.co/TRYwzJF/Group-9815.png",
