@@ -126,7 +126,7 @@ const Gcs = () => {
           <div className="gcs-payload-img">
             <img
               src="https://i.ibb.co/MRhWByN/UAV-Ground-Control-Station-I01-2k.png"
-              alt=""
+              alt="err"
             />
           </div>
         </div>
