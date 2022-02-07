@@ -49,7 +49,7 @@ const ProductMenu = () => {
                   id: 2,
                   title: "ASTRA",
                   content: "A rugged and long-endurance drone",
-                  img: "https://i.ibb.co/K9836Gx/Mask-Group-58.png",
+                  img: "https://i.ibb.co/KqY0PyG/Mask-Group-56.png",
                 }}
                 setImg={setImg}
               />
@@ -58,7 +58,7 @@ const ProductMenu = () => {
                   id: 3,
                   title: "AERAS",
                   content: "A swift and dependable drone",
-                  img: "https://i.ibb.co/KqY0PyG/Mask-Group-56.png",
+                  img: "https://i.ibb.co/K9836Gx/Mask-Group-58.png",
                 }}
                 setImg={setImg}
               />
