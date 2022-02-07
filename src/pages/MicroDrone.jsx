@@ -65,6 +65,7 @@ const MicroDrone = () => {
           spec_design: droneDetails?.spec_design,
           spec: droneDetails?.specifications,
           img: droneDetails?.footerimg,
+          tableImg: droneDetails?.payloadImg,
         }}
       />
     </div>

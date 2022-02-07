@@ -12,7 +12,7 @@ const ProductNavitems = ({ data, setImg }) => {
         <motion.div
           initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: data.id / 4 }}
+          transition={{ duration: 1, delay: data.id / 5 }}
           className="productmenu-nav-item"
           onPointerOver={() => setImg(data.img)}>
           <div className="productmenu-nav-item-contents">

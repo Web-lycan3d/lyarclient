@@ -29,7 +29,7 @@ const About = () => {
         </motion.div>
         <div className="about-footer">
           <div className="about-footer-img">
-            <img src="https://i.ibb.co/p4yR08m/Group-10351.webp" alt="" />
+            <img src="https://i.ibb.co/3CVQXmJ/Group-9716.png" alt="error" />
           </div>
           <div className="about-footer-details">
             <h2>ABOUT US</h2>

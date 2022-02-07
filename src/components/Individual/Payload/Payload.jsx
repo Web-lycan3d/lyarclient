@@ -57,7 +57,7 @@ const Payload = ({ payload }) => {
         <h3 className="sheet-h3">SPEC SHEET</h3>
         <div className="sheet-contents">
           <div className="sheet-table">
-            <div className="sheet-spec">
+            {/* <div className="sheet-spec">
               <p className="sheet-ptag"> Specification</p>
               {payload.spec.map(({ item, value }) => (
                 <div className="sheet-spec-item" key={item}>
@@ -67,7 +67,7 @@ const Payload = ({ payload }) => {
               ))}
             </div>
             <div className="sheet-table-right">
-              <div className="sheet-table-design">
+               <div className="sheet-table-design">
                 <p className="sheet-ptag">Design</p>
                 {payload.spec_design.map(({ item, value }) => (
                   <div className="sheet-design-item" key={item}>
@@ -84,7 +84,11 @@ const Payload = ({ payload }) => {
                     <span>{value}</span>
                   </div>
                 ))}
-              </div>
+              </div>  
+             
+            </div> */}
+            <div className="sheet-table-img">
+              <img src={payload.tableImg} alt="spectable" />
             </div>
           </div>
           <div className="sheet-img">

@@ -66,8 +66,8 @@ export const individualDrones = [
       },
       {
         id: 6,
-        image: "",
-        desp: "",
+        image: "https://i.ibb.co/6ZyK6jg/Group-10341.png",
+        desp: "Emits very little noise and cannot be heard from a certain height",
       },
     ],
     feature_Img: "https://i.ibb.co/BV70Sx2/Group-9739.png",
@@ -146,6 +146,7 @@ export const individualDrones = [
         value: "EO/IR Camera",
       },
     ],
+    payloadImg: "https://i.ibb.co/CJczWKX/Group-96622.png",
     footerimg: "https://i.ibb.co/qYDx2SH/Path-104.png",
   },
   {
@@ -236,7 +237,7 @@ export const individualDrones = [
       {
         id: 3,
         payload_item_text: "LIDAR",
-        payload_item_img: "https://i.ibb.co/f0b9VDC/Mask-Group-75.webp",
+        payload_item_img: "https://i.ibb.co/3r8Tf8d/Group-102723.png",
         payload_usage:
           "Used for 3D mapping, LiDAR data can be easily converted into 3D models to interpret the environment by generating instantaneous and massive amounts of measurements.: LiDAR is unaffected by ambient light variations and performs well in low light conditions.: The data collected is highly accurate and thus enables faster performance and reduces processing requirements.",
       },
@@ -303,7 +304,8 @@ export const individualDrones = [
         value: "LiDAR",
       },
     ],
-    footerimg: "https://i.ibb.co/7bFKxd3/Path-104.png",
+    payloadImg: "https://i.ibb.co/8mG3gzK/astratable.png",
+    footerimg: "https://i.ibb.co/zFG6dGw/Path-104.png",
   },
   {
     id: 3,
@@ -393,21 +395,21 @@ export const individualDrones = [
       {
         id: 1,
         payload_item_text: "DEFENCE",
-        payload_item_img: "https://i.ibb.co/frTQPLc/Military.png",
+        payload_item_img: "https://i.ibb.co/bR8DcW1/Military.png",
         payload_usage:
           "The payload can be used to deliver vital supplies to front line troops in the military in challenging environments.: This helps to reduce the amount of supplies stored at the battle front and increases the speed of resupply.",
       },
       {
         id: 2,
         payload_item_text: "MEDICAL",
-        payload_item_img: "https://i.ibb.co/cN2KxVt/Medical.png",
+        payload_item_img: "https://i.ibb.co/64TKGhZ/Medical.png",
         payload_usage:
           "The payload consists of a delivery box that is mounted to the drone and is ideal for rapid delivery of medication, vaccines, blood samples and other medical supplies to clinics, laboratories and patients safely and without delay.",
       },
       {
         id: 3,
         payload_item_text: "LOGISTICS",
-        payload_item_img: "https://i.ibb.co/16jrzhs/Logistics.png",
+        payload_item_img: "https://i.ibb.co/StNgyQy/Logistics.png",
         payload_usage:
           "Due to the payload capability, delivery of goods and packages can be carried out faster and more conveniently with a lesser chance of being damaged during transit and handling as the drone flight path is extremely smooth.",
       },
@@ -466,6 +468,7 @@ export const individualDrones = [
         value: "2 KG Logistics",
       },
     ],
+    payloadImg: "https://i.ibb.co/whycMvy/aeras.png",
     footerimg: "https://i.ibb.co/zN987Fb/Path-104.png",
   },
   {
@@ -625,6 +628,7 @@ export const individualDrones = [
         value: "EO/IR Camera",
       },
     ],
+    payloadImg: "https://i.ibb.co/8jFhp2Z/aetos.png",
     footerimg: "https://i.ibb.co/VTVHc8X/Path-104.webp",
   },
   {
@@ -696,7 +700,7 @@ export const individualDrones = [
         desp: "Tool-less assembly and disassembly of the drone can be performed.",
       },
     ],
-    feature_Img: "https://i.ibb.co/0qTZHX8/Group-9742.png",
+    feature_Img: "https://i.ibb.co/Bn25WmW/Group-10359.webp",
     payload: [
       {
         id: 1,
@@ -773,6 +777,7 @@ export const individualDrones = [
         value: "300g of Ammunition",
       },
     ],
+    payloadImg: "https://i.ibb.co/j6J1SH3/ornio.png",
     footerimg: "https://i.ibb.co/55ydV4y/Path-104.png",
   },
 ];

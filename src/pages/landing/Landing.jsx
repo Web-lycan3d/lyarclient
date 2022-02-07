@@ -6,16 +6,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import { Link, useNavigate } from "react-router-dom";
 
+import "aos/dist/aos.css";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { AosEffect } from "../../components/AosEffect";
 
 const Landing = () => {
   const [swarmState, setSwarmState] = useState(false);
   const [gcsState, setGcsState] = useState(true);
 
   const navigate = useNavigate();
-
+  AosEffect();
   return (
     <div className="landing-container">
       <div className="landing-contents">
@@ -106,9 +109,9 @@ const Landing = () => {
         </div>
       </div>
       <div className="landing-content-2">
-        <h1>OUR PRODUCTS</h1>
+        <h1 data-aos="fade-up">OUR PRODUCTS</h1>
         <div className="landing-content-2-details">
-          <div className="landing-content-2-left">
+          <div className="landing-content-2-left" data-aos="fade-right">
             <div className="landing-content-2-img">
               <img src="https://i.ibb.co/xXtTNRw/Mask-Group-76.png" alt="err" />
             </div>
@@ -122,7 +125,7 @@ const Landing = () => {
               </div>
             </Link>
           </div>
-          <div className="landing-content-2-right">
+          <div className="landing-content-2-right" data-aos="fade-left">
             <div className="landing-content-2-img">
               <img src="https://i.ibb.co/yPXbW4Q/Mask-Group-20.png" alt="err" />
             </div>
@@ -140,13 +143,18 @@ const Landing = () => {
         </div>
       </div>
       <div
-        className="landing-content-3"
+        className={
+          swarmState
+            ? "landing-content-3 landing-content-active"
+            : "landing-content-3"
+        }
         style={swarmState ? { cursor: "pointer" } : { cursor: "auto" }}
         onClick={() => {
           swarmState && navigate("/swarm");
         }}>
         <div className="landing-content-3-details">
           <h3
+            data-aos="fade-up"
             onClick={() => {
               setGcsState(false);
               setSwarmState(true);
@@ -170,7 +178,11 @@ const Landing = () => {
         )}
       </div>
       <div
-        className="landing-content-4"
+        className={
+          gcsState
+            ? "landing-content-4 landing-content-active"
+            : "landing-content-4 "
+        }
         style={gcsState ? { cursor: "pointer" } : { cursor: "auto" }}
         onClick={() => {
           gcsState && navigate("/gcs?scroll=" + true);

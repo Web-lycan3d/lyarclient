@@ -3,14 +3,16 @@
 import React from "react";
 import "./sidebar.styles.scss";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
     <div className="sidebar-container">
       <div className="sidebar-list">
-        <ul className="sidebar-ul">
-          <li className="sidebar-li">
-            <a href="#demo">DEMO</a>
-          </li>
+        <ul className={!props.gcs ? "sidebar-ul" : "sidebar-ul sidebar-ul-gcs"}>
+          {!props.gcs && (
+            <li className="sidebar-li">
+              <a href="#demo">DEMO</a>
+            </li>
+          )}
           <li className="sidebar-li">
             <a href="#productfeatures">FEATURES</a>
           </li>

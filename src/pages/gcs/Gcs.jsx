@@ -83,7 +83,7 @@ const Gcs = () => {
             <img src="https://i.ibb.co/wJMhxRT/Group-10354.png" alt="err" />
           </motion.div>
           <div className="gcs-sidebar">
-            <Sidebar />
+            <Sidebar gcs={true} />
           </div>
         </div>
       </div>
@@ -109,17 +109,19 @@ const Gcs = () => {
           </div>
         </div>
       </div>
-      <Features
-        features={{
-          img: gcsData[0].feature_Img,
-          array: gcsData[0].features,
-        }}
-      />
-      <div className="gcs-payload-container">
+      <div id="#features">
+        <Features
+          features={{
+            img: gcsData[0].feature_Img,
+            array: gcsData[0].features,
+          }}
+        />
+      </div>
+      <div className="gcs-payload-container" id="payload">
         <h6 className="gcs-h6tag">HARDWARE SPECIFICATION</h6>
         <div className="gcs-payload-contents">
           <div className="gcs-payload-details">
-            <img src="https://i.ibb.co/MByKF0j/Group-10339.png" alt="" />
+            <img src="https://i.ibb.co/MByKF0j/Group-10339.png" alt="err" />
           </div>
           <div className="gcs-payload-img">
             <img
