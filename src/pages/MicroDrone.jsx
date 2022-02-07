@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect } from "react";
+import React from "react";
 import Features from "../components/Individual/Features/Features";
 import PageCenter from "../components/Individual/PageCenter/PageCenter";
 import PageHeader from "../components/Individual/PageHeader/PageHeader";

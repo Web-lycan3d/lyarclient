@@ -634,7 +634,7 @@ export const individualDrones = [
   {
     id: 5,
     droneName: "ORNIO",
-    videoUrl: "Aeras",
+    videoUrl: "Ornio",
     pageheaderText:
       "UAVs have taken on a new role in the military and can be used in warfare as their main method of achieving their objectives. ORNIO is a loitering munition UAV that is more like a missile as it carries explosive payloads and self-destructs. Interestingly, loitering munitions are also known as “suicide drones” with offense as their main aim. The size of loitering munitions can range from as small as a model airplane to as long as a surfboard. ORNIO is a fixed-wing UAV and is powered by pusher propellers. It is able to stay airborne and cover a large area, loiter around targets and when a target is selected or detected it instantly attacks it.",
     pageheadersvgdrone: "https://i.ibb.co/4j6yPRB/Group-9719.png",
