@@ -52,7 +52,10 @@ const MicroDrone = () => {
         }}
       />
 
-      <DroneVideo url={droneDetails?.videoUrl} />
+      <DroneVideo
+        url={droneDetails?.videoUrl}
+        poster={droneDetails?.droneVideo}
+      />
       <Features
         features={{
           img: droneDetails?.feature_Img,

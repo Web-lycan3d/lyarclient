@@ -37,7 +37,7 @@ export const individualDrones = [
     pagecentertext: "A compact yet powerful drone.",
     pagecenterBg: "https://i.ibb.co/vPBZJb1/Mask-Group-64.webp",
     sectorImg: "https://i.ibb.co/PcJJ0kL/Group-9812.png",
-    droneVideo: "",
+    droneVideo: "https://i.ibb.co/v1RbC2v/Screenshot-8-min-1.webp",
     features: [
       {
         id: 1,
@@ -184,7 +184,7 @@ export const individualDrones = [
     pagecentertext: "A rugged and long-endurance drone",
     pagecenterBg: "https://i.ibb.co/sty1kG9/Mask-Group-66.webp",
     sectorImg: "https://i.ibb.co/wRmx5BY/Group-10357.png",
-    droneVideo: "",
+    droneVideo: "https://i.ibb.co/Z6YtFSz/Screenshot-9-min-1.webp",
     features: [
       {
         id: 1,
@@ -356,7 +356,7 @@ export const individualDrones = [
     pagecentertext: "A swift and dependable drone",
     pagecenterBg: "https://i.ibb.co/5BbxnFL/Mask-Group-65.webp",
     sectorImg: "https://i.ibb.co/gPqpcTj/Group-9814.png",
-    droneVideo: "",
+    droneVideo: "https://i.ibb.co/7ybYhgz/Screenshot-11-min-1.webp",
     features: [
       {
         id: 1,
@@ -507,7 +507,7 @@ export const individualDrones = [
     pagecentertext: "A high precision bird's-eye UAV",
     pagecenterBg: "https://i.ibb.co/yB6nvKP/Mask-Group-67.webp",
     sectorImg: "https://i.ibb.co/TRYwzJF/Group-9815.png",
-    droneVideo: "",
+    droneVideo: "https://i.ibb.co/Ry38SBG/Screenshot-10-min-1.webp",
     features: [
       {
         id: 1,
@@ -666,7 +666,7 @@ export const individualDrones = [
     pagecentertext: "A silent yet deadly UAV",
     pagecenterBg: "https://i.ibb.co/jw1tNsp/Mask-Group-68.webp",
     sectorImg: "https://i.ibb.co/hsrcYyb/Group-10313.png",
-    droneVideo: "",
+    droneVideo: "https://i.ibb.co/z27PYrq/Screenshot-15-min-1.webp",
     features: [
       {
         id: 1,
